@@ -6,7 +6,7 @@ from behave.model_core import Status
 
 # Hooks
 def before_scenario(context, scenario):
-    context.driver = webdriver.Firefox()
+    context.driver = webdriver.Chrome()
     context.driver.implicitly_wait(10)
     context.wait = WebDriverWait(context.driver, 10)
 
