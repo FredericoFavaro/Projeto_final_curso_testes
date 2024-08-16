@@ -1,4 +1,4 @@
-Funcionalidade: Funcionalidades do menu superior
+Funcionalidade: Menu superior
 
         @TesteMenuPessoas
         Cenário: Testando a pesquisa do menu Pessoas
