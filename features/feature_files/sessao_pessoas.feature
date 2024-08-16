@@ -10,7 +10,7 @@ Funcionalidade: Menu superior
              Então o modal de login/cadastro para ver o perfil completo aparece
         
         @TesteMenuLearning
-        Cenário: Testando a pesquisa do menu Learning
+        Cenário: Pesquisa e acesso a um curso online
             Dado que o usuário está no início
              Quando clicar no item Learning
               E digitar Power Bi mais ENTER
