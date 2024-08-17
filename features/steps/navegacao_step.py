@@ -84,7 +84,7 @@ def step_impl(context):
 
    
 
-@when(u'eu clico nos filtros "Remoto" e "Fortaleza, CE"')
+@when(u'eu clico nos filtros "Remoto" e "Porto Alegre"')
 def step_impl(context):
   context.navegacao_page.escolher_remoto_local()
   time.sleep(2)

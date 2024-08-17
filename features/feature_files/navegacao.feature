@@ -14,7 +14,7 @@ Funcionalidade: Mexer nos menus de navegação
     Quando clico na aba "Vagas" na barra de navegação
     E digito "Gerente" no campo vaga
     E Limpo o campo de Local e digito "Brasil"
-    E eu clico nos filtros "Remoto" e "Fortaleza, CE"
+    E eu clico nos filtros "Remoto" e "Porto Alegre"
     Então a página deve mostrar a vaga filtrada
 
   
