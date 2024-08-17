@@ -9,6 +9,7 @@ def before_scenario(context, scenario):
     context.driver = webdriver.Chrome()
     context.driver.implicitly_wait(10)
     context.wait = WebDriverWait(context.driver, 10)
+    context.add_argument('--start-maximized')
 
 def after_scenario(context, scenario):
     print(scenario.name)
