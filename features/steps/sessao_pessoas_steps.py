@@ -2,14 +2,14 @@ from behave import given, when, then
 from features.pages.sessao_pessoas_page import SessaoPessoasPage
 import time
 
-# region Testando o acesso ao perfil pesquisado
+# region Pesquisa e tentativa de acesso do perfil de um usuário
 @given(u'que o usuário está na página inicial')
 def step_impl(context):
     context.driver.get("https://br.linkedin.com")
     context.linkedin_page = SessaoPessoasPage(context.driver)
     time.sleep(10)
 
-@when(u'clicar no menu Pessoas')
+@when(u'clicar no item Pessoas')
 def step_impl(context):
     context.linkedin_page.clicar_botao_pessoas()
     time.sleep(5)
@@ -19,7 +19,7 @@ def step_impl(context):
     context.linkedin_page.digitar_nome()
     time.sleep(2)
 
-@when(u'digitar o sobrenome e clicar ENTER')
+@when(u'digitar o sobrenome mais ENTER')
 def step_impl(context):
     context.linkedin_page.digitar_sobrenome()
     time.sleep(5)
@@ -45,12 +45,12 @@ def step_impl(context):
     context.linkedin_page = SessaoPessoasPage(context.driver)
     time.sleep(10)
 
-@when(u'clicar no menu Learning')
+@when(u'clicar no item Learning')
 def step_impl(context):
     context.linkedin_page.clicar_botao_learning()
     time.sleep(5)
 
-@when(u'digitar Power Bi e clicar ENTER')
+@when(u'digitar Power Bi mais ENTER')
 def step_impl(context):
     context.linkedin_page.digitar_pesquisa()
     time.sleep(2)

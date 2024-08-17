@@ -1,6 +1,6 @@
 Funcionalidade: Menu superior
 
-        @TesteMenuPessoas
+        @TesteItemPessoas
         Cenário: Pesquisa e tentativa de acesso do perfil de um usuário
             Dado que o usuário está na página inicial
              Quando clicar no item Pessoas
@@ -9,7 +9,7 @@ Funcionalidade: Menu superior
               E clicar no resultado da busca
              Então o modal de login/cadastro para ver o perfil completo aparece
         
-        @TesteMenuLearning
+        @TesteItemLearning
         Cenário: Pesquisa e acesso a um curso online
             Dado que o usuário está no início
              Quando clicar no item Learning
